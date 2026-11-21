@@ -1,0 +1,2138 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maa Adya Forge and Refractories</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional industrial icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terracotta: {
+                50: "#fdf6f0",
+                100: "#faede1",
+                500: "#c85a32",
+                600: "#b04722",
+                700: "#933718",
+                800: "#782d15",
+              },
+              charcoal: {
+                800: "#1e2229",
+                900: "#14171c",
+                950: "#0b0d10",
+              },
+              amberGold: {
+                400: "#fbbf24",
+                500: "#f59e0b",
+                600: "#d97706",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .hero-pattern {
+        background-image:
+          linear-gradient(
+            to bottom,
+            rgba(15, 23, 42, 0.75),
+            rgba(15, 23, 42, 0.65)
+          ),
+          url("/Bricks_Project/Images/background.jpeg"); /* Uses your downloaded custom background image */
+        background-size: cover;
+        background-position: center;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-white text-slate-900 font-sans antialiased selection:bg-terracotta-500 selection:text-white"
+  >
+    <!-- Navigation Bar -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-300 shadow-sm"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between"
+      >
+        <a href="#home" class="flex items-center space-x-3 group">
+          <!-- Logo Image (Enlarged width to reach closer to Home) -->
+          <img
+            src="/Bricks_Project/Images/Website Logo.jpeg"
+            alt="Maa Adya Forge Logo"
+            class="h-16 w-80 sm:w-96 lg:w-[420px] object-contain rounded-lg p-1"
+          />
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center space-x-6">
+          <a
+            href="#home"
+            class="text-sm font-semibold text-slate-700 hover:text-terracotta-600 transition-colors"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-sm font-semibold text-slate-700 hover:text-terracotta-600 transition-colors"
+            >About Us</a
+          >
+          <a
+            href="#products"
+            class="text-sm font-semibold text-slate-700 hover:text-terracotta-600 transition-colors"
+            >Products</a
+          >
+          <a
+            href="#exporter"
+            class="text-sm font-semibold text-slate-700 hover:text-terracotta-600 transition-colors"
+            >Global Exporter</a
+          >
+          <a
+            href="#gallery"
+            class="text-sm font-semibold text-slate-700 hover:text-terracotta-600 transition-colors"
+            >Gallery</a
+          >
+          <a
+            href="#clients"
+            class="text-sm font-semibold text-slate-700 hover:text-terracotta-600 transition-colors"
+            >Clients</a
+          >
+          <a
+            href="#contact"
+            class="px-5 py-2.5 rounded-lg bg-terracotta-600 text-white font-medium text-sm hover:bg-terracotta-500 shadow-md shadow-terracotta-600/20 transition-all hover:scale-105"
+            >Get Quote</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden text-slate-700 hover:text-slate-900 focus:outline-none p-2"
+        >
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl"
+      >
+        <a
+          href="#home"
+          class="block text-base font-semibold text-slate-700 hover:text-terracotta-600 mobile-link"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block text-base font-semibold text-slate-700 hover:text-terracotta-600 mobile-link"
+          >About Us</a
+        >
+        <a
+          href="#products"
+          class="block text-base font-semibold text-slate-700 hover:text-terracotta-600 mobile-link"
+          >Products</a
+        >
+        <a
+          href="#exporter"
+          class="block text-base font-semibold text-slate-700 hover:text-terracotta-600 mobile-link"
+          >Global Exporter</a
+        >
+        <a
+          href="#gallery"
+          class="block text-base font-semibold text-slate-700 hover:text-terracotta-600 mobile-link"
+          >Gallery</a
+        >
+        <a
+          href="#clients"
+          class="block text-base font-semibold text-slate-700 hover:text-terracotta-600 mobile-link"
+          >Clients</a
+        >
+        <a
+          href="#contact"
+          class="block text-center py-3 rounded-lg bg-terracotta-600 text-white font-medium hover:bg-terracotta-500"
+          >Get Quote</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen hero-pattern flex items-center pt-24"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 relative z-10 w-full"
+      >
+        <div class="max-w-3xl">
+          <div
+            class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-terracotta-600/30 border border-terracotta-500/40 text-amberGold-400 text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-sm"
+          >
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Excellence in Metal Casting & High-Temp Solutions</span>
+          </div>
+          <h1
+            class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-white leading-tight tracking-tight mb-6"
+          >
+            Maa Adya Forge &
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-terracotta-500 to-amberGold-400"
+              >Refractories</span
+            >
+          </h1>
+          <p
+            class="text-lg sm:text-xl text-slate-200 mb-10 leading-relaxed font-light max-w-2xl"
+          >
+            Delivering elite industrial forgings, refractory materials, and
+            precision automotive components engineered for extreme endurance and
+            global standards.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5"
+          >
+            <a
+              href="#products"
+              class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-terracotta-600 text-white font-semibold text-base hover:bg-terracotta-500 shadow-xl shadow-terracotta-600/30 transition-all hover:-translate-y-0.5"
+            >
+              <span>Explore Products</span>
+              <i class="fa-solid fa-arrow-right ml-2.5"></i>
+            </a>
+            <!-- Download Brochure Button -->
+            <a
+              href="brochure.pdf"
+              download
+              class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-slate-800/80 text-white font-semibold text-base border border-slate-700 hover:bg-slate-800 hover:border-terracotta-500 backdrop-blur-md transition-all"
+            >
+              <i
+                class="fa-solid fa-file-arrow-down text-amberGold-400 mr-2.5"
+              ></i>
+              <span>Download Brochure</span>
+            </a>
+          </div>
+
+          <!-- Live Metrics Banner -->
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-16 pt-10 border-t border-slate-700/80"
+          >
+            <div>
+              <div class="text-3xl sm:text-4xl font-serif font-bold text-white">
+                60+
+              </div>
+              <div class="text-xs text-slate-300 uppercase tracking-wider mt-1">
+                Years of Legacy
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-3xl sm:text-4xl font-serif font-bold text-amberGold-400"
+              >
+                100%
+              </div>
+              <div class="text-xs text-slate-300 uppercase tracking-wider mt-1">
+                Quality Assured
+              </div>
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <div class="text-3xl sm:text-4xl font-serif font-bold text-white">
+                4+
+              </div>
+              <div class="text-xs text-slate-300 uppercase tracking-wider mt-1">
+                Export Nations & Growing
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section (Complete 6 Decades History) -->
+    <section id="about" class="py-24 bg-slate-50 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 relative">
+            <div
+              class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white"
+            >
+              <img
+                src="/Bricks_Project/Images/legacy-history.svg"
+                alt="Factory Foundry Floor"
+                class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <!-- <div
+              class="absolute -bottom-8 -right-8 bg-slate-900 text-white p-8 rounded-2xl shadow-2xl hidden sm:block border border-slate-800 max-w-xs"
+            >
+              <div
+                class="text-amberGold-400 text-3xl font-serif font-bold mb-1"
+              >
+                6 Decades
+              </div>
+              <div class="text-sm font-semibold text-slate-200">
+                Of Industrial Experience
+              </div>
+              <p class="text-xs text-slate-400 mt-2">
+                From fireclay mining in 1960 to advanced forging today.
+              </p>
+            </div> -->
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta-50 text-terracotta-700 text-xs font-bold tracking-wider uppercase border border-terracotta-200"
+            >
+              <i class="fa-solid fa-landmark"></i>
+              <span>Our Legacy & History</span>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight"
+            >
+              Six Decades of Industrial Experience and Excellence
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-sm">
+              The story of Maa Adya Forge is built on a rich industrial heritage
+              spanning more than six decades. What began with fireclay mining in
+              1960 has evolved through refractory manufacturing and, more
+              recently, into forging and automotive component production. Over
+              the years, each phase of our journey has strengthened our
+              industrial expertise, expanded our manufacturing capabilities, and
+              reinforced our commitment to meeting the changing needs of the
+              industry.
+            </p>
+
+            <div class="space-y-3 pt-2 text-xs text-slate-800">
+              <div
+                class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm"
+              >
+                <span class="font-bold text-terracotta-700"
+                  >1960 | The Foundation:</span
+                >
+                First fireclay mine established, laying the raw-material sector
+                foundation.
+              </div>
+              <div
+                class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm"
+              >
+                <span class="font-bold text-terracotta-700"
+                  >1975 | Growth:</span
+                >
+                Establishment of our second fireclay mine, deepening our raw
+                material supply role.
+              </div>
+              <div
+                class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm"
+              >
+                <span class="font-bold text-terracotta-700"
+                  >1990 | Manufacturing:</span
+                >
+                Established our first refractory unit under
+                <span class="font-semibold">Jai Mahadevi Fire Bricks</span>.
+              </div>
+              <div
+                class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm"
+              >
+                <span class="font-bold text-terracotta-700"
+                  >2020–2025 | Diversification:</span
+                >
+                Expanded into metal forging via
+                <span class="font-semibold">Mahadev Forge</span>, specializing
+                in parts for Tata Motors.
+              </div>
+            </div>
+
+            <p
+              class="text-slate-800 leading-relaxed text-sm font-medium italic"
+            >
+              "Maa Adya Forge — Rooted in Heritage. Driven by Industry. Focused
+              on the Future."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section
+      id="products"
+      class="py-24 bg-white border-y border-slate-200 relative"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div
+            class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta-50 text-terracotta-700 text-xs font-bold tracking-wider uppercase mb-3 border border-terracotta-200"
+          >
+            <i class="fa-solid fa-cubes"></i>
+            <span>Our Product Portfolio</span>
+          </div>
+          <h2
+            class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-4"
+          >
+            Refractories, Forging & Automotive Spares
+          </h2>
+          <p class="text-slate-600 text-base">
+            Explore our specialized categories. Click on any category card to
+            view detailed sub-product tiles complete with images below.
+          </p>
+        </div>
+
+        <!-- 1. Refractories Division -->
+        <div class="mb-16">
+          <div
+            class="flex items-center justify-between mb-8 border-b border-slate-200 pb-4"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 rounded-xl bg-terracotta-600 text-white flex items-center justify-center font-bold shadow-sm"
+              >
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <h3 class="text-2xl font-serif font-bold text-slate-900">
+                1. Refractories Division
+              </h3>
+            </div>
+            <div class="flex items-center space-x-2">
+              <button
+                onclick="scrollSection('refractories-carousel', -260)"
+                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+              >
+                <i class="fa-solid fa-arrow-left text-sm"></i>
+              </button>
+              <button
+                onclick="scrollSection('refractories-carousel', 260)"
+                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+              >
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="refractories-carousel"
+            class="flex overflow-x-auto space-x-5 no-scrollbar scroll-smooth pb-4"
+          >
+            <!-- Product 1: Refractory Bricks & Shapes -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0 cursor-pointer hover:border-terracotta-500 transition-all"
+              onclick="displaySubTiles('bricks')"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80"
+                    alt="Refractory Bricks & Shapes"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Refractory</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Refractory Bricks & Shapes
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Engineered for severe thermal stress and high-temp
+                    industrial furnaces.
+                  </p>
+                  <span
+                    class="text-xs font-bold text-terracotta-600 flex items-center gap-1"
+                  >
+                    Click to view sub-products
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2: Castables -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0 cursor-pointer hover:border-terracotta-500 transition-all"
+              onclick="displaySubTiles('castables')"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=400&q=80"
+                    alt="Castables"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Refractory</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Castables
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Monolithic refractory mixes for seamless furnace linings and
+                    repairs.
+                  </p>
+                  <span
+                    class="text-xs font-bold text-terracotta-600 flex items-center gap-1"
+                  >
+                    Click to view sub-products
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3: Mortars & Compounds -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0 cursor-pointer hover:border-terracotta-500 transition-all"
+              onclick="displaySubTiles('mortars')"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80"
+                    alt="Mortars & Compounds"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Refractory</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Mortars & Compounds
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    High-temperature jointing mortars and sealing compounds.
+                  </p>
+                  <span
+                    class="text-xs font-bold text-terracotta-600 flex items-center gap-1"
+                  >
+                    Click to view sub-products
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Sub-Product Tiles Showcase Area -->
+          <div
+            id="sub-tile-container"
+            class="mt-8 hidden bg-slate-50 p-6 rounded-3xl border border-slate-300 transition-all"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <h4
+                id="sub-tile-title"
+                class="text-xl font-serif font-bold text-slate-900"
+              >
+                Sub-Products
+              </h4>
+              <button
+                onclick="closeSubTiles()"
+                class="text-xs font-bold text-slate-500 hover:text-slate-900 bg-white px-3 py-1.5 rounded-lg border border-slate-300"
+              >
+                Close <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div
+              id="sub-tile-grid"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+            >
+              <!-- Dynamically populated sub-product tiles with individual images -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Forging Division -->
+        <div class="mb-16">
+          <div
+            class="flex items-center justify-between mb-8 border-b border-slate-200 pb-4"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 rounded-xl bg-slate-900 text-amberGold-400 flex items-center justify-center font-bold shadow-sm"
+              >
+                <i class="fa-solid fa-hammer"></i>
+              </div>
+              <h3 class="text-2xl font-serif font-bold text-slate-900">
+                2. Forging Division
+              </h3>
+            </div>
+            <div class="flex items-center space-x-2">
+              <button
+                onclick="scrollSection('forging-carousel', -260)"
+                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+              >
+                <i class="fa-solid fa-arrow-left text-sm"></i>
+              </button>
+              <button
+                onclick="scrollSection('forging-carousel', 260)"
+                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+              >
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="forging-carousel"
+            class="flex overflow-x-auto space-x-5 no-scrollbar scroll-smooth pb-4"
+          >
+            <!-- Forging 1 -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80"
+                    alt="Industrial Forged Rings"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Forging</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Industrial Forged Rings
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Seamless rolled and hammered metal rings from carbon & alloy
+                    steel.
+                  </p>
+                  <div
+                    class="space-y-1 text-[11px] text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200"
+                  >
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Material:</span> Alloy Steel
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Strength:</span> High Tensile
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Forging 2 -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1535813347745-3fe9ee77e4e4?auto=format&fit=crop&w=400&q=80"
+                    alt="Heavy Duty Shafts & Flanges"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Forging</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Heavy Duty Shafts & Flanges
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Precision open-die components for rotational torque and
+                    high-pressure pipelines.
+                  </p>
+                  <div
+                    class="space-y-1 text-[11px] text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200"
+                  >
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Process:</span> Open Die
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Tolerance:</span> Precision
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Forging 3 -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80"
+                    alt="Custom Forged Blocks"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Forging</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Custom Forged Blocks
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Heavy steel blocks forged under multi-ton hydraulic presses.
+                  </p>
+                  <div
+                    class="space-y-1 text-[11px] text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200"
+                  >
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Treatment:</span> Heat Treated
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Quality:</span> UT Tested
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Automotive Spares -->
+        <div>
+          <div
+            class="flex items-center justify-between mb-8 border-b border-slate-200 pb-4"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 rounded-xl bg-amberGold-500 text-slate-950 flex items-center justify-center font-bold shadow-sm"
+              >
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <h3 class="text-2xl font-serif font-bold text-slate-900">
+                3. Automotive Spares
+              </h3>
+            </div>
+            <div class="flex items-center space-x-2">
+              <button
+                onclick="scrollSection('automotive-carousel', -260)"
+                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+              >
+                <i class="fa-solid fa-arrow-left text-sm"></i>
+              </button>
+              <button
+                onclick="scrollSection('automotive-carousel', 260)"
+                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+              >
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="automotive-carousel"
+            class="flex overflow-x-auto space-x-5 no-scrollbar scroll-smooth pb-4"
+          >
+            <!-- Sub-Product: Shafts -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80"
+                    alt="Shafts"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Automotive</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Shafts
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Precision forged transmission and drive shafts for
+                    commercial vehicles.
+                  </p>
+                  <div
+                    class="space-y-1 text-[11px] text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200"
+                  >
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Application:</span> Drivetrain
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Standard:</span> OEM Grade
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sub-Product: Universal Joint Yokes -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80"
+                    alt="Universal Joint Yokes"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Automotive</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Universal Joint Yokes
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Robust forged U-joint yokes built for high rotational
+                    stress.
+                  </p>
+                  <div
+                    class="space-y-1 text-[11px] text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200"
+                  >
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Application:</span> Steering
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Durability:</span> High
+                      Fatigue
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sub-Product: Camshaft -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80"
+                    alt="Camshaft"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Automotive</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Camshaft
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    High-precision forged and heat-treated camshafts for valve
+                    timing.
+                  </p>
+                  <div
+                    class="space-y-1 text-[11px] text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200"
+                  >
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Application:</span> Engine
+                      Valve
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Finish:</span> Precision
+                      Ground
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sub-Product: Connecting Rod -->
+            <div
+              class="min-w-[250px] sm:min-w-[270px] max-w-[270px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between flex-shrink-0"
+            >
+              <div>
+                <div class="relative h-36 overflow-hidden bg-slate-200">
+                  <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80"
+                    alt="Connecting rod"
+                    class="w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute top-2.5 right-2.5 px-2 py-0.5 bg-slate-900/90 text-amberGold-400 text-[10px] font-semibold rounded-full"
+                    >Automotive</span
+                  >
+                </div>
+                <div class="p-5">
+                  <h4 class="text-base font-bold text-slate-900 mb-1">
+                    Connecting Rod
+                  </h4>
+                  <p class="text-slate-600 text-xs mb-3">
+                    Drop-forged connecting rods designed to convert piston
+                    motion into torque.
+                  </p>
+                  <div
+                    class="space-y-1 text-[11px] text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200"
+                  >
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Application:</span> Piston
+                      Assembly
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="font-semibold">Strength:</span> Superior
+                      Tensile
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exporter / Global Reach Section -->
+    <section
+      id="exporter"
+      class="py-24 bg-slate-50 border-b border-slate-200 relative"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-16"
+        >
+          <div>
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta-50 text-terracotta-700 text-xs font-bold tracking-wider uppercase mb-3 border border-terracotta-200"
+            >
+              <i class="fa-solid fa-earth-americas"></i>
+              <span>Global Footprint</span>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-2"
+            >
+              Trusted International Exporter
+            </h2>
+            <p class="text-slate-600 text-base">
+              Supplying high-grade refractories and industrial forgings across
+              international borders.
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 mt-6 md:mt-0">
+            <button
+              onclick="scrollSection('export-carousel', -220)"
+              class="w-12 h-12 rounded-full bg-white border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              onclick="scrollSection('export-carousel', 220)"
+              class="w-12 h-12 rounded-full bg-white border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="export-carousel"
+          class="flex overflow-x-auto space-x-4 no-scrollbar scroll-smooth pb-4"
+        >
+          <!-- Nepal -->
+          <div
+            class="min-w-[200px] max-w-[200px] bg-white rounded-2xl p-4 border border-slate-200 flex flex-col justify-between flex-shrink-0 shadow-sm"
+          >
+            <div>
+              <div
+                class="w-9 h-9 rounded-xl bg-terracotta-100 text-terracotta-600 flex items-center justify-center text-sm font-bold mb-3"
+              >
+                <i class="fa-solid fa-flag"></i>
+              </div>
+              <h3 class="text-lg font-serif font-bold text-slate-900 mb-1">
+                Nepal
+              </h3>
+              <p class="text-slate-600 text-xs mb-3">
+                Regular dispatch of heavy refractory bricks via highway freight.
+              </p>
+            </div>
+            <div
+              class="pt-2.5 border-t border-slate-100 text-[10px] font-semibold text-terracotta-600 uppercase tracking-wider"
+            >
+              Active Export Route
+            </div>
+          </div>
+
+          <!-- Bangladesh -->
+          <div
+            class="min-w-[200px] max-w-[200px] bg-white rounded-2xl p-4 border border-slate-200 flex flex-col justify-between flex-shrink-0 shadow-sm"
+          >
+            <div>
+              <div
+                class="w-9 h-9 rounded-xl bg-terracotta-100 text-terracotta-600 flex items-center justify-center text-sm font-bold mb-3"
+              >
+                <i class="fa-solid fa-flag"></i>
+              </div>
+              <h3 class="text-lg font-serif font-bold text-slate-900 mb-1">
+                Bangladesh
+              </h3>
+              <p class="text-slate-600 text-xs mb-3">
+                Direct railway & port logistics supplying custom forged rings.
+              </p>
+            </div>
+            <div
+              class="pt-2.5 border-t border-slate-100 text-[10px] font-semibold text-terracotta-600 uppercase tracking-wider"
+            >
+              Active Export Route
+            </div>
+          </div>
+
+          <!-- South Africa -->
+          <div
+            class="min-w-[200px] max-w-[200px] bg-white rounded-2xl p-4 border border-slate-200 flex flex-col justify-between flex-shrink-0 shadow-sm"
+          >
+            <div>
+              <div
+                class="w-9 h-9 rounded-xl bg-terracotta-100 text-terracotta-600 flex items-center justify-center text-sm font-bold mb-3"
+              >
+                <i class="fa-solid fa-flag"></i>
+              </div>
+              <h3 class="text-lg font-serif font-bold text-slate-900 mb-1">
+                South Africa
+              </h3>
+              <p class="text-slate-600 text-xs mb-3">
+                Containerized maritime delivery of high-alumina bricks & shafts.
+              </p>
+            </div>
+            <div
+              class="pt-2.5 border-t border-slate-100 text-[10px] font-semibold text-terracotta-600 uppercase tracking-wider"
+            >
+              Active Export Route
+            </div>
+          </div>
+
+          <!-- Myanmar -->
+          <div
+            class="min-w-[200px] max-w-[200px] bg-white rounded-2xl p-4 border border-slate-200 flex flex-col justify-between flex-shrink-0 shadow-sm"
+          >
+            <div>
+              <div
+                class="w-9 h-9 rounded-xl bg-terracotta-100 text-terracotta-600 flex items-center justify-center text-sm font-bold mb-3"
+              >
+                <i class="fa-solid fa-flag"></i>
+              </div>
+              <h3 class="text-lg font-serif font-bold text-slate-900 mb-1">
+                Myanmar
+              </h3>
+              <p class="text-slate-600 text-xs mb-3">
+                Reliable supply of refractory linings and industrial components.
+              </p>
+            </div>
+            <div
+              class="pt-2.5 border-t border-slate-100 text-[10px] font-semibold text-terracotta-600 uppercase tracking-wider"
+            >
+              Active Export Route
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section
+      id="gallery"
+      class="py-24 bg-white border-b border-slate-200 relative"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-16"
+        >
+          <div>
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta-50 text-terracotta-700 text-xs font-bold tracking-wider uppercase mb-3 border border-terracotta-200"
+            >
+              <i class="fa-solid fa-images"></i>
+              <span>Visual Showcase</span>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-2"
+            >
+              Factory & Product Gallery
+            </h2>
+            <p class="text-slate-600 text-base">
+              Explore snapshots of our advanced manufacturing floors, quality
+              tests, and finished products.
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 mt-6 md:mt-0">
+            <button
+              onclick="scrollSection('gallery-carousel', -320)"
+              class="w-12 h-12 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              onclick="scrollSection('gallery-carousel', 320)"
+              class="w-12 h-12 rounded-full bg-slate-100 border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="gallery-carousel"
+          class="flex overflow-x-auto space-x-6 no-scrollbar scroll-smooth pb-4"
+        >
+          <div
+            class="min-w-[280px] sm:min-w-[320px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex-shrink-0 group"
+          >
+            <div class="h-52 overflow-hidden bg-slate-200">
+              <img
+                src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=500&q=80"
+                alt="Factory Foundry Floor"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 text-base mb-1">
+                Factory Foundry Floor
+              </h3>
+              <p class="text-xs text-slate-600">
+                Automated manufacturing line with advanced temperature control.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[280px] sm:min-w-[320px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex-shrink-0 group"
+          >
+            <div class="h-52 overflow-hidden bg-slate-200">
+              <img
+                src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=500&q=80"
+                alt="Refractory Bricks Production"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 text-base mb-1">
+                Refractory Bricks Production
+              </h3>
+              <p class="text-xs text-slate-600">
+                High-alumina bricks undergoing rigorous firing and inspection.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[280px] sm:min-w-[320px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex-shrink-0 group"
+          >
+            <div class="h-52 overflow-hidden bg-slate-200">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=500&q=80"
+                alt="Industrial Forged Rings"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 text-base mb-1">
+                Industrial Forged Rings
+              </h3>
+              <p class="text-xs text-slate-600">
+                Precision machined metal rings ready for heavy machinery
+                installation.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[280px] sm:min-w-[320px] bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex-shrink-0 group"
+          >
+            <div class="h-52 overflow-hidden bg-slate-200">
+              <img
+                src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=500&q=80"
+                alt="Automotive Shafts"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 text-base mb-1">
+                Automotive Shafts & Yokes
+              </h3>
+              <p class="text-xs text-slate-600">
+                Precision forged components manufactured for commercial vehicle
+                drivetrains.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Brands / Clients Logo Section -->
+    <section
+      id="clients"
+      class="py-20 bg-slate-50 border-b border-slate-200 relative"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-12"
+        >
+          <div>
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta-50 text-terracotta-700 text-xs font-bold tracking-wider uppercase mb-3 border border-terracotta-200"
+            >
+              <i class="fa-solid fa-handshake"></i>
+              <span>Our Esteemed Clients</span>
+            </div>
+            <h2 class="text-3xl font-serif font-bold text-slate-900 mb-2">
+              Trusted by Industrial Giants
+            </h2>
+            <p class="text-slate-600 text-sm">
+              Proudly supplying premier components and refractory solutions to
+              leading nation-building enterprises.
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 mt-6 md:mt-0">
+            <button
+              onclick="scrollSection('clients-carousel', -260)"
+              class="w-12 h-12 rounded-full bg-white border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              onclick="scrollSection('clients-carousel', 260)"
+              class="w-12 h-12 rounded-full bg-white border border-slate-300 text-slate-800 flex items-center justify-center hover:bg-terracotta-600 hover:text-white hover:border-terracotta-600 transition-all shadow-sm"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="clients-carousel"
+          class="flex overflow-x-auto space-x-5 no-scrollbar scroll-smooth pb-4"
+        >
+          <div
+            class="min-w-[240px] bg-white border border-slate-200 rounded-2xl p-6 flex items-center justify-center hover:shadow-md transition-all flex-shrink-0 shadow-sm"
+          >
+            <div class="text-center flex flex-col items-center">
+              <a
+                href="https://share.google/BPtNyPviTUg7exgVU"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center"
+              >
+                <img
+                  src="https://share.google/BPtNyPviTUg7exgVU"
+                  alt="L&T Logo"
+                  class="h-10 object-contain transition-all"
+                />
+                <span
+                  class="block text-[10px] text-slate-500 uppercase tracking-widest mt-2 font-semibold"
+                  >Larsen & Toubro</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[240px] bg-white border border-slate-200 rounded-2xl p-6 flex items-center justify-center hover:shadow-md transition-all flex-shrink-0 shadow-sm"
+          >
+            <div class="text-center flex flex-col items-center">
+              <a
+                href="https://share.google/1P1fGJt4EoPVnoWOl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center"
+              >
+                <img
+                  src="https://share.google/1P1fGJt4EoPVnoWOl"
+                  alt="NTPC Logo"
+                  class="h-10 object-contain transition-all"
+                />
+                <span
+                  class="block text-[10px] text-slate-500 uppercase tracking-widest mt-2 font-semibold"
+                  >Powering India</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[240px] bg-white border border-slate-200 rounded-2xl p-6 flex items-center justify-center hover:shadow-md transition-all flex-shrink-0 shadow-sm"
+          >
+            <div class="text-center flex flex-col items-center">
+              <a
+                href="https://share.google/Pu3FYt8fiLsIJRVdP"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center"
+              >
+                <img
+                  src="https://share.google/Pu3FYt8fiLsIJRVdP"
+                  alt="NRL Logo"
+                  class="h-10 object-contain transition-all"
+                />
+                <span
+                  class="block text-[10px] text-slate-500 uppercase tracking-widest mt-2 font-semibold"
+                  >Numaligarh Refinery</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[240px] bg-white border border-slate-200 rounded-2xl p-6 flex items-center justify-center hover:shadow-md transition-all flex-shrink-0 shadow-sm"
+          >
+            <div class="text-center flex flex-col items-center">
+              <a
+                href="https://share.google/xQhbQf0cYIawYBHEc"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center"
+              >
+                <img
+                  src="https://share.google/xQhbQf0cYIawYBHEc"
+                  alt="BHEL Logo"
+                  class="h-10 object-contain transition-all"
+                />
+                <span
+                  class="block text-[10px] text-slate-500 uppercase tracking-widest mt-2 font-semibold"
+                  >Heavy Electricals</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <div
+            class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta-50 text-terracotta-700 text-xs font-bold tracking-wider uppercase mb-3 border border-terracotta-200"
+          >
+            <i class="fa-solid fa-star"></i>
+            <span>Client Trust</span>
+          </div>
+          <h2
+            class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-4"
+          >
+            Trusted by Leading Builders & Architects
+          </h2>
+          <p class="text-slate-600 text-base">
+            See what industry professionals say about our structural product
+            quality and timely plant dispatch.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-amberGold-500 space-x-1 mb-4 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                "We used Maa Adya's high alumina refractories for our
+                high-temperature furnace lining. The thermal endurance and zero
+                spalling during continuous operation was exceptional."
+              </p>
+            </div>
+            <div
+              class="flex items-center space-x-4 pt-4 border-t border-slate-200"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-terracotta-100 text-terracotta-700 font-bold flex items-center justify-center text-lg"
+              >
+                AS
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 text-sm">
+                  Ar. Sameer Malhotra
+                </div>
+                <div class="text-xs text-slate-500">
+                  Principal Architect, Opus Designs
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-amberGold-500 space-x-1 mb-4 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                "For heavy industrial machinery, forged shaft and yoke quality
+                is non-negotiable. Maa Adya's forgings consistently test above
+                required tolerances. Their plant fleet ensures on-time
+                deliveries."
+              </p>
+            </div>
+            <div
+              class="flex items-center space-x-4 pt-4 border-t border-slate-200"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-amberGold-400/20 text-amberGold-600 font-bold flex items-center justify-center text-lg"
+              >
+                RK
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 text-sm">Rakesh Kumar</div>
+                <div class="text-xs text-slate-500">
+                  Managing Director, Skyline Infrastructure
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-amberGold-500 space-x-1 mb-4 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                "Their technical sales team honored bulk pricing transparently
+                and provided complete metallurgical test reports. Maa Adya is
+                our go-to partner for all critical forge requirements."
+              </p>
+            </div>
+            <div
+              class="flex items-center space-x-4 pt-4 border-t border-slate-200"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center text-lg"
+              >
+                VP
+              </div>
+              <div>
+                <div class="font-bold text-slate-900 text-sm">Vikram Patel</div>
+                <div class="text-xs text-slate-500">
+                  Chief Engineer, Buildcon Group
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section
+      id="contact"
+      class="py-24 bg-slate-50 relative border-t border-slate-200"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div class="lg:col-span-5 space-y-6">
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta-50 text-terracotta-700 text-xs font-bold tracking-wider uppercase border border-terracotta-200"
+            >
+              <i class="fa-solid fa-headset"></i>
+              <span>Get In Touch</span>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight"
+            >
+              Connect with Our Plant Sales & Technical Desk
+            </h2>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Ready to place an order or get a custom quotation? Fill out the
+              inquiry form or reach out via our direct plant lines.
+            </p>
+
+            <div class="space-y-6 pt-4">
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-terracotta-100 text-terracotta-700 flex items-center justify-center text-lg flex-shrink-0"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 mb-1">
+                    Manufacturing Plant Address
+                  </h3>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Industrial Growth Center, Heavy Engineering Zone, India
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-terracotta-100 text-terracotta-700 flex items-center justify-center text-lg flex-shrink-0"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 mb-1">Direct Helpline</h3>
+                  <p class="text-xs text-slate-600">
+                    +91 (800) 456-7890 / +91 (987) 654-3210
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-terracotta-100 text-terracotta-700 flex items-center justify-center text-lg flex-shrink-0"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 mb-1">Email Orders</h3>
+                  <p class="text-xs text-slate-600">
+                    sales@maaadyaforge.com / prateekbhagat2016@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inquiry Form -->
+          <div
+            class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl"
+          >
+            <form
+              id="inquiry-form"
+              onsubmit="handleFormSubmit(event)"
+              class="space-y-6"
+            >
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    >Your Full Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="form-name"
+                    required
+                    placeholder="John Doe"
+                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-terracotta-500 text-slate-900 text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    >Phone Number *</label
+                  >
+                  <input
+                    type="tel"
+                    id="form-phone"
+                    required
+                    placeholder="+91 98765 43210"
+                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-terracotta-500 text-slate-900 text-sm"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    >Email Address *</label
+                  >
+                  <input
+                    type="email"
+                    id="form-email"
+                    required
+                    placeholder="john@company.com"
+                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-terracotta-500 text-slate-900 text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                    >Product / Sub-product of Interest *</label
+                  >
+                  <select
+                    id="form-product"
+                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-terracotta-500 text-slate-900 text-sm"
+                  >
+                    <optgroup label="Refractories Division">
+                      <option value="Refractory Bricks & Shapes">
+                        Refractory Bricks & Shapes
+                      </option>
+                      <option
+                        value="Fire Clay IS:6 & IS:8 bricks, blocks & tiles"
+                      >
+                        ↳ Fire Clay IS:6 & IS:8 bricks, blocks & tiles
+                      </option>
+                      <option
+                        value="Fire Bricks 42%, 42D, 42SD, 40%, 40D, 40SD"
+                      >
+                        ↳ Fire Bricks 42%, 42D, 42SD, 40%, 40D, 40SD
+                      </option>
+                      <option
+                        value="High Alumina Bricks, Blocks and Tiles Upto 90%"
+                      >
+                        ↳ High Alumina Bricks, Blocks and Tiles Upto 90%
+                      </option>
+                      <option value="Precast Prefired Blocks">
+                        ↳ Precast Prefired Blocks
+                      </option>
+                      <option
+                        value="Mag Carbon Bricks upto Mgo 85%, Carbon 15%"
+                      >
+                        ↳ Mag Carbon Bricks upto Mgo 85%, Carbon 15%
+                      </option>
+                      <option value="Castables">Castables</option>
+                      <option value="Acid Resistant High Alumina Castables">
+                        ↳ Acid Resistant High Alumina Castables
+                      </option>
+                      <option value="Coil Coating Castables">
+                        ↳ Coil Coating Castables
+                      </option>
+                      <option value="Dense Castables (Upto 97% Alumina)">
+                        ↳ Dense Castables (Upto 97% Alumina)
+                      </option>
+                      <option value="Gel Bonded Castables">
+                        ↳ Gel Bonded Castables
+                      </option>
+                      <option
+                        value="Insulating Castables (Bulk Density 0.45 - 1.6gm/cc)"
+                      >
+                        ↳ Insulating Castables (Bulk Density 0.45 - 1.6gm/cc)
+                      </option>
+                      <option value="Low Cement Castables(Up to 94% Alumina)">
+                        ↳ Low Cement Castables(Up to 94% Alumina)
+                      </option>
+                      <option value="Phosphate Bonded Castables">
+                        ↳ Phosphate Bonded Castables
+                      </option>
+                      <option value="Self-flow Castables">
+                        ↳ Self-flow Castables
+                      </option>
+                      <option value="Silicon Carbide Based LC Castables">
+                        ↳ Silicon Carbide Based LC Castables
+                      </option>
+                      <option value="Silicon Carbide Based Plastic Refractory">
+                        ↳ Silicon Carbide Based Plastic Refractory
+                      </option>
+                      <option value="Special LC Castable For DRI Plants">
+                        ↳ Special LC Castable For DRI Plants
+                      </option>
+                      <option value="Trough Castables">
+                        ↳ Trough Castables
+                      </option>
+                      <option value="Mortars & Compounds">
+                        Mortars & Compounds
+                      </option>
+                      <option value="90k Mortars">↳ 90k Mortars</option>
+                      <option value="Air Setting Mortars">
+                        ↳ Air Setting Mortars
+                      </option>
+                      <option value="Expansive Mortars">
+                        ↳ Expansive Mortars
+                      </option>
+                      <option value="Fire Clay Mortars">
+                        ↳ Fire Clay Mortars
+                      </option>
+                      <option value="High Alumina Mortars">
+                        ↳ High Alumina Mortars
+                      </option>
+                      <option value="Silica Mortars">↳ Silica Mortars</option>
+                      <option value="Magnesia Mortars">
+                        ↳ Magnesia Mortars
+                      </option>
+                    </optgroup>
+                    <optgroup label="Forging Division">
+                      <option value="Industrial Forged Rings">
+                        Industrial Forged Rings
+                      </option>
+                      <option value="Heavy Duty Shafts & Flanges">
+                        Heavy Duty Shafts & Flanges
+                      </option>
+                      <option value="Custom Forged Blocks">
+                        Custom Forged Blocks
+                      </option>
+                    </optgroup>
+                    <optgroup label="Automotive Spares">
+                      <option value="Shafts">Shafts</option>
+                      <option value="Universal Joint Yokes">
+                        Universal Joint Yokes
+                      </option>
+                      <option value="Camshaft">Camshaft</option>
+                      <option value="Connecting Rod">Connecting Rod</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                  >Required Quantity / Specifications</label
+                >
+                <input
+                  type="text"
+                  id="form-qty"
+                  placeholder="e.g. 500 Pcs or 2 Tons"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-terracotta-500 text-slate-900 text-sm"
+                />
+              </div>
+
+              <div>
+                <label
+                  class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2"
+                  >Project Location & Message</label
+                >
+                <textarea
+                  id="form-message"
+                  rows="4"
+                  placeholder="Enter delivery site city or specific requirements..."
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-terracotta-500 text-slate-900 text-sm"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-4 rounded-xl bg-terracotta-600 text-white font-bold text-base hover:bg-terracotta-500 shadow-lg shadow-terracotta-600/30 transition-all"
+              >
+                Submit Official Quote Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <img
+                src="/Bricks_Project/Images/Website Logo.jpeg"
+                alt="Maa Adya Forge Logo"
+                class="h-10 w-auto object-contain bg-white/10 rounded-lg p-1"
+              />
+              <div>
+                <span
+                  class="text-lg font-serif font-bold text-white tracking-wide"
+                  >MAA ADYA</span
+                >
+                <span
+                  class="block text-[10px] tracking-widest text-amberGold-400 uppercase font-semibold"
+                  >Forge & Refractories</span
+                >
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+              Premier metal casting, industrial forgings, and high-temperature
+              refractory solutions engineered for industrial excellence.
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-white font-bold text-sm mb-4 uppercase tracking-wider"
+            >
+              Quick Links
+            </h3>
+            <ul class="space-y-2 text-xs">
+              <li>
+                <a
+                  href="#home"
+                  class="hover:text-amberGold-400 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-amberGold-400 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="hover:text-amberGold-400 transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#exporter"
+                  class="hover:text-amberGold-400 transition-colors"
+                  >Global Exporter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="hover:text-amberGold-400 transition-colors"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="hover:text-amberGold-400 transition-colors"
+                  >Clients</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="text-white font-bold text-sm mb-4 uppercase tracking-wider"
+            >
+              Follow Us
+            </h3>
+            <div class="flex space-x-3 text-lg">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-amberGold-400 hover:border-amberGold-400 transition-all"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-amberGold-400 hover:border-amberGold-400 transition-all"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-amberGold-400 hover:border-amberGold-400 transition-all"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-amberGold-400 hover:border-amberGold-400 transition-all"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-3">
+              Stay connected for plant updates & alloy catalogs.
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-white font-bold text-sm mb-4 uppercase tracking-wider"
+            >
+              Brochure Download
+            </h3>
+            <p class="text-xs text-slate-400 mb-3">
+              Get our complete catalog and specifications in PDF format.
+            </p>
+            <a
+              href="brochure.pdf"
+              download
+              class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-terracotta-600 text-white text-xs font-bold hover:bg-terracotta-500 transition-all shadow-md"
+            >
+              <i class="fa-solid fa-file-arrow-down mr-2"></i> Download PDF
+            </a>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400"
+        >
+          <p>
+            &copy; 2026 Maa Adya Forge and Refractories. All rights reserved.
+          </p>
+          <p class="mt-4 sm:mt-0">Industrial-Chic Web Branding</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Functionality with Google Sheets & Gmail Integration -->
+    <script>
+      // Replace with your actual Google Apps Script Web App URL
+      const GOOGLE_SCRIPT_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
+
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("shadow-md");
+        } else {
+          navbar.classList.remove("shadow-md");
+        }
+      });
+
+      // Carousel Scroll Function for Left/Right Arrows
+      function scrollSection(containerId, distance) {
+        const container = document.getElementById(containerId);
+        if (container) {
+          container.scrollBy({ left: distance, behavior: "smooth" });
+        }
+      }
+
+      // Sub-Product Data with Associated Images for Grid Tiles
+      const subProductsData = {
+        bricks: {
+          title: "Refractory Bricks & Shapes Collection",
+          items: [
+            {
+              name: "Fire Clay IS:6 & IS:8 bricks, blocks & tiles",
+              img: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Fire Bricks 42%, 42D, 42SD, 40%, 40D, 40SD",
+              img: "https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "High Alumina Bricks, Blocks and Tiles Upto 90%",
+              img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Precast Prefired Blocks",
+              img: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Refractory Bricks & Blocks",
+              img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Mag Carbon Bricks upto Mgo 85%, Carbon 15%",
+              img: "https://images.unsplash.com/photo-1535813347745-3fe9ee77e4e4?auto=format&fit=crop&w=400&q=80",
+            },
+          ],
+        },
+        castables: {
+          title: "Castables Collection",
+          items: [
+            {
+              name: "Acid Resistant High Alumina Castables",
+              img: "https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Coil Coating Castables",
+              img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Dense Castables (Upto 97% Alumina) Casting/ Gunning",
+              img: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Gel Bonded Castables",
+              img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Insulating Castables (Bulk Density 0.45 - 1.6gm/cc)",
+              img: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Low Cement Castables(Up to 94% Alumina)",
+              img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Phosphate Bonded Castables (Plastic Refractory)",
+              img: "https://images.unsplash.com/photo-1535813347745-3fe9ee77e4e4?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Self-flow Castables",
+              img: "https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Silicon Carbide Based LC Castables",
+              img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Silicon Carbide Based Plastic Refractory",
+              img: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Special LC Castable For DRI Plants",
+              img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Trough Castables",
+              img: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=400&q=80",
+            },
+          ],
+        },
+        mortars: {
+          title: "Mortars & Compounds Collection",
+          items: [
+            {
+              name: "90k Mortars",
+              img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Air Setting Mortars",
+              img: "https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Expansive Mortars",
+              img: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Fire Clay Mortars",
+              img: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "High Alumina Mortars",
+              img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Silica Mortars",
+              img: "https://images.unsplash.com/photo-1535813347745-3fe9ee77e4e4?auto=format&fit=crop&w=400&q=80",
+            },
+            {
+              name: "Magnesia Mortars",
+              img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
+            },
+          ],
+        },
+      };
+
+      // Display Sub-Product Tiles Dynamically with Images
+      function displaySubTiles(categoryKey) {
+        const container = document.getElementById("sub-tile-container");
+        const titleEl = document.getElementById("sub-tile-title");
+        const gridEl = document.getElementById("sub-tile-grid");
+
+        const data = subProductsData[categoryKey];
+        if (!data) return;
+
+        titleEl.textContent = data.title;
+        gridEl.innerHTML = "";
+
+        data.items.forEach((itemObj) => {
+          const tile = document.createElement("div");
+          tile.className =
+            "bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between";
+          tile.innerHTML = `
+            <div>
+              <div class="h-32 overflow-hidden bg-slate-200">
+                <img src="${itemObj.img}" alt="${itemObj.name}" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4">
+                <span class="text-[9px] font-bold uppercase tracking-wider text-terracotta-600 block mb-1">Sub-Product</span>
+                <h5 class="text-xs font-bold text-slate-900 mb-2">${itemObj.name}</h5>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="#contact" onclick="selectProductInForm('${itemObj.name}')" class="w-full py-2 px-3 bg-terracotta-50 text-terracotta-700 rounded-xl text-xs font-semibold hover:bg-terracotta-600 hover:text-white transition-colors flex items-center justify-center gap-1">
+                Request Quote <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          `;
+          gridEl.appendChild(tile);
+        });
+
+        container.classList.remove("hidden");
+        container.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+
+      function closeSubTiles() {
+        document.getElementById("sub-tile-container").classList.add("hidden");
+      }
+
+      function selectProductInForm(productName) {
+        const selectEl = document.getElementById("form-product");
+        if (selectEl) {
+          for (let option of selectEl.options) {
+            if (
+              option.value === productName ||
+              option.text.includes(productName)
+            ) {
+              selectEl.value = option.value;
+              break;
+            }
+          }
+        }
+      }
+
+      // Handle Main Contact Form Submission (Sends to Google Sheet & Email to prateekbhagat2016@gmail.com)
+      function handleFormSubmit(e) {
+        e.preventDefault();
+
+        const submitBtn = e.target.querySelector('button[type="submit"]');
+        submitBtn.textContent = "Submitting...";
+        submitBtn.disabled = true;
+
+        const formData = {
+          name: document.getElementById("form-name").value,
+          phone: document.getElementById("form-phone").value,
+          email: document.getElementById("form-email").value,
+          quantity:
+            document.getElementById("form-qty").value || "Not specified",
+          product: document.getElementById("form-product").value,
+          message: document.getElementById("form-message").value || "N/A",
+        };
+
+        fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        })
+          .then(() => {
+            alert(
+              "Thank you! Your official inquiry has been sent to our plant team, logged in our records, and emailed to prateekbhagat2016@gmail.com.",
+            );
+            document.getElementById("inquiry-form").reset();
+            submitBtn.textContent = "Submit Official Quote Request";
+            submitBtn.disabled = false;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            alert("Something went wrong. Please try again.");
+            submitBtn.textContent = "Submit Official Quote Request";
+            submitBtn.disabled = false;
+          });
+      }
+    </script>
+  </body>
+</html>

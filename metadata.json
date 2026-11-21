@@ -1,0 +1,6 @@
+{
+  "name": "Maa Adya Forge and Refractories",
+  "description": "Industrial refractory bricks, castables, mortars, metal forgings, and precision automotive spares backed by six decades of manufacturing heritage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
