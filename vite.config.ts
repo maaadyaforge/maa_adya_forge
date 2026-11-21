@@ -6,9 +6,9 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/maa_adya_forge/',
     plugins: [
-      react(),
-      base: '/maa_adya_forge/',
+      react(),      
       tailwindcss(),
       // Copies src/assets into dist/ so root-relative URLs like
       // "/src/assets/images/..." (e.g. generate_image output) still resolve
