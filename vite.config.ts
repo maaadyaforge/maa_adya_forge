@@ -8,6 +8,7 @@ export default defineConfig(() => {
   return {
     plugins: [
       react(),
+      base: '/maa_adya_forge/',
       tailwindcss(),
       // Copies src/assets into dist/ so root-relative URLs like
       // "/src/assets/images/..." (e.g. generate_image output) still resolve
